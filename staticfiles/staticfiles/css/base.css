@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+:root{
+    --appColor:rgb(190,0,0);
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+.nav-link.active, .nav-link:hover{
+  color:rgb(190,0,0) !important;
+  
+}
+/* responsive */
+.w-100{
+  height: 100vh;
+}
+/* nav bar */
+.navbar{
+    background-color: #fff !important;
+    position:fixed;
+    box-shadow: 10px 10px 5px 0px rgba(17,17,17,0.23);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(17,17,17,0.23);
+-moz-box-shadow: 10px 10px 5px 0px rgba(17,17,17,0.23);
+    
+  }
+
+  .navbar-nav a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+.navbar img{
+    width: 220px;
+    height: 60px;
+}
+.navbar .navbar-nav .con .nav-link{
+   color: var(--appColor);
+   border: 2px solid var(--appColor);
+   border-radius: 10px;
+   padding: 5px 20px;
+   background-color: #fff;
+}
+.navbar .navbar-nav .con .nav-link:hover{
+    color: #fff !important;
+    background-color: var(--appColor);
+ }
+
+
+
+
+
+
+
+
+ .bgcolor.scrolled{
+    background-color: #fff;
+}
+
+
+/* footer */
+
+.footer-top{
+    background: #111;
+    padding: 25px 0;
+}
+.segment-one , .segment-two , .segment-three , .segment-four p{
+  font-size: 13px;
+  color:#fff;
+}
+.segment-one h3{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#fff;
+  letter-spacing: 3px;
+  
+}
+.segment-two h2{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin:5px 0;
+}
+
+
+.segment-two ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.segment-two ul li{
+ 
+  line-height: 40px;
+}
+.segment-two ul li a{
+ 
+ text-decoration: none;
+ font-size: 15px;
+ color:#fff;
+}
+
+.segment-three h2{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin:5px 0;
+}
+
+.segment-three a i:hover{
+  transform: rotate(45deg);
+  transition: all 0.5s;
+
+}
+
+.segment-three a i {
+  font-size: 20px;
+  color:#fff;
+  padding: 10px 12px;
+  
+}
+
+.segment-four h2{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#FFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin:10px 0;
+}
+
+.footer-bottom-text{
+  text-align: center;
+  background: #000;
+  line-height: 70px;
+
+}
+
+
+
+
+
+
+
+ /* media querry */
+ @media screen and (max-width:768px){
+    .navbar .navbar-nav .con .nav-link{
+        color: #fff !important;
+        border:none;
+        padding: 0px 0px;
+        background-color: none;
+     }
+
+     .navbar{
+      background-color: rgba(0,0, 0, 0.9) !important;
+      position:fixed;
+      border-bottom: 2px solid goldenrod;
+      width: 100%;
+      
+    }
+
+    .navbar .navbar-toggler{
+      color: goldenrod;
+      background-color: goldenrod;
+    }
+    .nav-item .nav-link{
+      color: #fff !important;
+    }
+
+    .navbar .navbar-nav .con .nav-link{
+      color: #fff;
+      border: 2px solid var(--appColor);
+      border-radius: 10px;
+      padding: 5px 0px;
+      background-color: goldenrod;
+      text-align: center;
+   }
+   .navbar .navbar-nav .con .nav-link:hover{
+       color: #fff !important;
+       background-color: var(--appColor);
+    }
+
+
+ }
+
+ @media screen and (max-width:992px){
+  .navbar .navbar-nav .con .nav-link{
+      color: #fff !important;
+      border:none;
+      padding: 0px 0px;
+      background-color: none;
+   }
+
+   .navbar{
+    background-color: rgba(0,0, 0, 0.9) !important;
+    position:fixed;
+    border-bottom: 2px solid goldenrod;
+    width: 100%;
+    
+  }
+
+  .navbar .navbar-toggler{
+    color: goldenrod;
+    background-color: goldenrod;
+  }
+  .nav-item .nav-link{
+    color: #fff !important;
+  }
+
+  .navbar .navbar-nav .con .nav-link{
+    color: #fff;
+    border: 2px solid var(--appColor);
+    border-radius: 10px;
+    padding: 5px 0px;
+    background-color: goldenrod;
+    text-align: center;
+ }
+ .navbar .navbar-nav .con .nav-link:hover{
+     color: #fff !important;
+     background-color: var(--appColor);
+  }
+
+
+}
+
+
