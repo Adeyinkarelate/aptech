@@ -1,1 +1,1 @@
-web: gunicorn aptech.wsgi --log-file -
+web: gunicorn aptech.wsgi 
