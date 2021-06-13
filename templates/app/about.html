@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<style>
+     #section3{
+    background: url("/static/images/banner1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    block-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 25px ;
+    min-height:100%;
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.7);
+    padding: 80px 0px;
+   }
+
+   #section3 h3{
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 35px;
+     font-weight: 600;
+     margin-top: 80px;
+     
+   }
+   #section3 p{
+    margin:auto;
+    font-size: 15px; 
+    font-family: 'Charm', cursive;
+    letter-spacing: 2px;
+    color:#fff;
+    line-height: 25px;
+  }
+
+  #con-2{
+      width:60%;
+  }
+
+/* event */
+#sectionn2 h3{
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 35px;
+     font-weight: 600;
+}
+
+/* event end */
+  /* media screen */
+  @media screen and (max-width:768px){
+
+#con-2{
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+
+  }
+}
+</style>
+     <div class="container-fluid ">
+      <div class="row my-2 justify-content-center text-center">
+          <div class="col-sm-12 " id="section3">
+            <div class="con-2">
+              <h3 class="animate__animated animate__fadeInUp animate__delay-1s text-center" style="font-weight: 900; color: #fff;"><span style="color: goldenrod;">Aptech<span style="color: #fff;"> Ota</span></h3>
+               <p class="text-center a1">Welcome!It is all about Aptech Ota..</p>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- second row -->
+<div class="container" id="sectionn2">
+  <div class="row my-5 justify-content-center text-center">
+      <div class="col-sm-12">
+          <h3>Some events at the center.</h3>
+      </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <!-- row two -->
+  <div class="row shadow mb-3" style="background: #fff;">
+    <div class="col-sm-12 col-md-6" >
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <div class="box">
+                <p class="text-justify my-2">Aptech Computer Education, Abeokuta, Ogun State came into being when AVIGO Investment Limited acquired the ICT Educational franchise from Aptech Computer Education, Mumbai India. It was based on the vision to pass a legacy of ICT training to the up and coming ICT servy Nigerians and also to develop the next generation of Nigerians who will continue from the present generation after more than 25 years’ experience garnered in the ICT space in the banking institutions, Insurance, Full Fledged IT companies, etc cutting across Private companies, corporate organizations, Public and multi-national companies. Our soul aim was to give something back to the society for the betterment of ICT in Nigeria.</p>
+                <p class="text-justify my-2"><b>AVIGO inculcates strict adherence to policies, procedures and high standards on every task whose overall effect will result to quality and guarantee job satisfaction at final delivery point.</b> Our students are trained to compete with other Aptech Centers (about 1,400 centers worldwide) as well as International students/graduates from other elite Universities.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                    <div class="box">
+                      <p class="text-justify my-2"><b>Aptech Computer Education, Ota have alliance with Middlesex University as well as Portsmouth University, London, United Kingdom.</b> To expatiate further, our students after 24 months programme in Advanced Diploma in Software Engineering (ADSE) will merit a full credit transfer to either Middlesex or Portsmouth Universities in the UK to start in the final year and after 12 months, graduates in Software engineering with a Bachelor of Science (BSC).</p>
+                        </div>
+                     </div>
+              <div class="carousel-item">
+                <div class="box">
+                  <p class="text-justify my-2"><b>AVIGO, is an indigenous firm, which is one of the most effective environmental and allied services company in Nigeria, it was incorporated at Corporate Affairs Commission Abuja in the year 2017.</b> AVIGO is a 100% Nigerian owned Company. The company has a comprehensive pool of professional staff consisting of Managers, Software developers, Hardware Engineers, Network Engineers as well as grounded Informational Technology professionals. We have the skill set to design, and deploy Local Area Network (LAN), Wide Area Network (WAN), WIFI, Cisco Network Cascading, Network Integration, etc. We also can also offer network support services to existing clients network.</p>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- col-2 -->
+    <div class="col-sm-12 col-md-6">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img src="{% static '/images/advert2.jpg' %}" class="d-block w-100" alt="..." style="width: 100%; height: 450px;" >
+              </div>
+              <div class="carousel-item">
+                <img src="{% static '/images/advert.jpg' %}" class="d-block w-100" alt="..." style="width: 100%; height: 450px;" >
+              </div>
+              <div class="carousel-item">
+                <img src="{% static '/images/banner1.jpg' %}" class="d-block w-100" alt="..." style="width: 100%; height: 450px;" >
+              </div>
+              <div class="carousel-item">
+                <img src="{% static '/images/ota.jpg' %}" class="d-block w-100" alt="..." style="width: 100%; height: 450px;" >
+              </div>
+            </div>
+          </div>
+    </div>
+ </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Aptech Ota Centre is a franchise of Aptech Computer Education India. We give hands-on training in software engineering: web development, Mobile and Desktop app development and basic computer operation in Ota Ogun Nigeria. We build high performing developers through our rich and outstanding curriculum."
+  />
+  <meta
+     name="keywords"
+     content="Learn Programming, learn web development in Nigeria, Become a software engineer, Learn mobile application development, frontend development, backend development, Learn HTML, Learn CSS, Learn JavaScript, Learn Python, Learn C#, Learn Java, SQL, Project Management, Digital Marketing"
+   />
+   <meta
+   property="og:title"
+   content="Aptech Ota Centre | Computer Education"
+ />
+ <meta
+ property="og:description"
+ content="Aptech Ota Centre is a franchise of Aptech Computer Education India. We give hands-on training in software engineering: web development, Mobile and Desktop app development and basic computer operation in Lekki Nigeria. We build high performing developers through our rich and outstanding curriculum."
+/>
+<title>Aptech | Computer |Education|Sango Ota Ogun State| Nigeria</title>
+    <!-- bootstrap Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- fount awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- animated css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- Aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static '/images/log.png' %}"  alt="" ></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'course' %}">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aptech' %}">Why Aptech</a>
+          </li>
+          <li class="nav-item con">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+<!-- navbar end -->
+{% block main %}
+
+{% endblock %}
+
+<!-- footer -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+          <img src="{% static 'images/log.png' %}"  alt="" style="width: 200px; ">
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+          <h2 class="my-2">More Info</h2>
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'course' %}">Courses</a></li>
+          <li><a href="{% url 'aptech' %}">Why Aptech</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
+          <h2 class="my-2">Follow Us</h2>
+          <p>No 1, Joju bustop, ogbohu plaza, beside Gt bank, Ota ,Ogun state , Nigeria</p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a> 
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>         
+        </div>
+
+        
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+          <h2 class="my-2">Contact</h2>
+
+          <ul>
+            <li><span style="font-weight: bold; margin-right: 5px; font-size: 15px; color: goldenrod;">Email:</span><a  href = "mailto: aptechotacentre@gmail.com">aptechotacentre@gmail.com</a></li>
+            <li><span style="font-weight: bold; margin-right: 5px; font-size: 15px; color: goldenrod;"> Telephone:</span> +234 (0) 808 46 36 06 1</li>
+            <li><span style="font-weight: bold; margin-right: 5px; font-size: 15px; color:goldenrod;"> Office opens:</span><br> Mon - Saturday 9.00AM - 5.00PM GMT +1</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom-text">All Right reserved by &copy; <script>document.write(new Date().getFullYear());</script> Aptech Ota </p>
+</footer>
+
+
+<!-- bootstrap js -->
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://kit.fontawesome.com/e6bc8b7e05.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script>
+
+  // $(window).scroll(function(){
+  //     $('nav').toggleClass('scrolled', $(this).scrollTop()>50);
+  // });
+
+  AOS.init();
+
+</script>
+
+
+
+</body>
+</html>
