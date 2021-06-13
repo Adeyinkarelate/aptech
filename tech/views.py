@@ -33,7 +33,7 @@ def AboutView(request):
     return render(request,'app/about.html')
 
 def WhyAptechView(request):
-    return render(request,'app/whyaptech.html')
+    return render(request,'app/tech.html')
 
 def CourseView(request):
     return render(request,'app/course.html')
