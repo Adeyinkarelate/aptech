@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<style>
+  #section3{
+    background: url("/static/images/banner1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    block-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 25px ;
+    min-height:100%;
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.7);
+    padding: 80px 0px;
+   }
+
+   #section3 h3{
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 35px;
+     font-weight: 600;
+     margin-top: 80px;
+     
+   }
+   #section3 p{
+    margin:auto;
+    font-size: 15px; 
+    font-family: 'Charm', cursive;
+    letter-spacing: 2px;
+    color:#fff;
+    line-height: 25px;
+  }
+
+  #con-2{
+      width:60%;
+  }
+
+/* event */
+#sectionn2 h3{
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 35px;
+     font-weight: 600;
+}
+
+/* event end */
+/* why apptech */
+#con-2{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  #section2 h3{
+    font-family: 'Josefin Sans', sans-serif;
+     font-size: 25px;
+     letter-spacing: 2px;
+  }
+  #section2 p{
+    margin:auto;
+    font-size: 15px; 
+    font-family: 'Charm', cursive;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color:#000;
+  }
+  #story h3{
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 25px;
+     letter-spacing: 2px;
+  }
+  center{
+    font-family: 'Josefin Sans', sans-serif;
+     font-size: 25px;
+     letter-spacing: 2px;
+  }
+
+  #pro h3{
+  font-family: 'Josefin Sans', sans-serif;
+     font-size: 20px;
+     font-weight: 600;
+     color: #000;
+     margin-top: 5px;
+}
+#pro p{
+    font-size: 15px; 
+    font-family: 'Charm', cursive;
+    letter-spacing: 2px;
+    color:#111;
+}
+
+
+
+
+  /* media screen */
+  @media screen and (max-width:768px){
+
+#con-2{
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+
+  }
+}
+</style>
+
+     <div class="container-fluid ">
+      <div class="row my-2 justify-content-center text-center">
+          <div class="col-sm-12 " id="section3">
+            <div class="con-2">
+              <h3 class="animate__animated animate__fadeInUp animate__delay-1s text-center" style="font-weight: 900; color: #fff;">Why<span style="color: goldenrod;"> Aptech ?</span></h3>
+                 <p class="text-center a1">Take your It career to new heights with,Aptech..Unleach Your Potential</p>
+            </div>
+          </div>
+      </div>
+  </div>
+
+<!-- second row -->
+<div class="container-fluid my-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 my-2" id="section2">
+            <h3 class="text-center mt-4">Who We Are?</h3>
+            <p class="text-center">Aptech Computer Education is the I.T training brand of Aptech Ltd. It is a leading provider of quality I.T Education to school graduates, diploma holder, university graduates, and working professional.</p>
+            <p class="text-center">
+                    
+                Aptech has always been seen as a leader in the I.T training industry. We have gained a reputation for the quality and integrity with which we provide our services to million of students worldwide through world-class education programs and teaching methodologies.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6 my-2">
+            <img src="{% static '/images/aptech2.jpg' %}" alt="" style="width: 100%; height: 450px;">
+        </div>
+    </div>
+</div>
+<!-- our story -->
+<div class="container-fluid">
+  <center class=" my-4">Our Story</center>
+
+      <div class="row my-3 " id="story">
+        <div class="col-sm-12 col-md-3  my-2 p-3">
+          <h3 style="color: goldenrod; font-weight: 400;" class="text-center">5</h3>
+          <p class="text-center">CONTINENTS</p>
+        </div>
+        <div class="col-sm-12 col-md-3 my-2 p-3">
+          <h3 style="color: goldenrod; font-weight: 400;" class="text-center">40</h3>
+          <p class="text-center">COUNTRIES OF GLOBAL PRESENCE</p>
+        </div>
+        <div class="col-sm-12 col-md-3 my-2  p-3">
+          <h3 style="color: goldenrod; font-weight: 400;" class="text-center">35</h3>
+          <p class="text-center">YEARS OF GLOBAL EXPERIENCE</p>
+        </div>
+        <div class="col-sm-12 col-md-3 my-2  p-3">
+          <h3 style="color: goldenrod; font-weight: 400;" class="text-center">7000000</h3>
+          <p class="text-center">STUDENTS TRAINED</p>
+        </div>
+      </div>
+    </marquee>
+</div>
+<!-- ========================awards==================== -->
+<!-- ========================awards==================== -->
+<center id="academics">OUR ACADEMIC ALLIANCES</center>
+<!-- courses -->
+<div class="container-fluid my-3">
+  <div class="row">
+      <div class="col-sm-12 col-md-6 my-2 " id="pro">
+          <div class="card mb-3 shadow" style="width: 100%;">
+              <div class="row no-gutters">
+                <div class="col-md-5">
+                  <img src="{% static '/images/linco.png' %}" class="d-block w-100" alt="..." style="width: 100%; height: 350px;" >
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h3 class="card-title">Lincoln University College, Malaysia</h3>
+                    <p class="card-text text-justify"> Lincoln University College (LUC), located at Petaling Jaya, Malaysia was established in the year 2002 as Lincoln College (LC) and later upgraded to Lincoln University College in the year 2011. Lincoln University College is one of the premier private institutions of higher education approved by the Ministry of Higher Education and Malaysian Qualifications Agency (MQA- National Accreditation Board). The University College is also crowned with 5 Star ranking by the Ministry of Higher Education, Malaysia in 2017. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!-- row 2 -->
+      <div class="col-sm-12 col-md-6 my-2 " id="pro">
+        <div class="card mb-3 shadow" style="width: 100%;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="{% static '/images/middle.png' %}" class="d-block w-100" alt="..." style="width: 100%; height: 350px;" >
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h3 class="card-title">Lincoln University College, Malaysia</h3>
+                  <p class="card-text text-justify"> Middlesex University teaches 40,000 students at their campuses in London, Dubai, Mauritius and Malta, and with prestigious academic partners across the world. It has a reputation for the highest quality teaching and has a practical, innovative approach to working with businesses to develop staff potential and provide business solutions.   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+      </div>
+      </div>
+<!-- awards end -->
+
+{% endblock %}

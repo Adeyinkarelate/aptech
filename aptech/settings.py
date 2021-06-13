@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+import django_heroku
 import os
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$bai$m&lt#r)7w%rze_k6%%s=p0dafn^&st#odc^!id&5pl#@t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aptechota.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -76,8 +79,12 @@ WSGI_APPLICATION = 'aptech.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'aptech',
+        'USER': 'postgres',
+        'PASSWORD': 'aptechbase',
+        'HOST':'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -127,7 +134,7 @@ STATICFILES_DIRS = [
     BASE_DIR , "static",
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 #media files
 MEDIA_URL = '/media/'
@@ -141,3 +148,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'aptechotacentre@gmail.com'
 EMAIL_HOST_PASSWORD = 'aptech1234'
 EMAIL_USE_TLS = True
+
+
+django_heroku.settings(locals())
