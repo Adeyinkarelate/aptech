@@ -703,13 +703,13 @@ h4 {
        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
            <div class="carousel-inner" >
              <div class="carousel-item active">
-               <img src="/media/{{event.image1}}"  class="d-block w-100" alt="..." style="width: 100%; height: 500px;" >
+               <img src="{{ event.image1.url }}"  class="d-block w-100" alt="..." style="width: 100%; height: 500px;" >
              </div>
              <div class="carousel-item">
-               <img src="/media/{{event.image2}}" class="d-block w-100" alt="..." style="width: 100%; height: 500px;" >
+               <img src="{{ event.image2.url }}" class="d-block w-100" alt="..." style="width: 100%; height: 500px;" >
              </div>
              <div class="carousel-item">
-               <img src="/media/{{event.image3}}" class="d-block w-100" alt="..." style="width: 100%; height: 500px;" >
+               <img src="{{ event.image3.url }}" class="d-block w-100" alt="..." style="width: 100%; height: 500px;" >
              </div>
            </div>
          </div>

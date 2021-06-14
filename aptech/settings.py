@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import django_heroku
 import os
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tech',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -149,5 +154,10 @@ EMAIL_HOST_USER = 'aptechotacentre@gmail.com'
 EMAIL_HOST_PASSWORD = 'aptech1234'
 EMAIL_USE_TLS = True
 
+cloudinary.config( 
+  cloud_name = "aptechota", 
+  api_key = "367695659965914", 
+  api_secret = "4EWqBHUP2dFe_CqgmQUgzkGUcW4" 
+)
 
 django_heroku.settings(locals())
